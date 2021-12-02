@@ -202,7 +202,7 @@
                     <span>강릉원주대학교<br>핵심 역량 진단 시스템의<br>로그인, 메인, 서브 페이지를<br>작업하였습니다.</span>
                 </div>
             </a>
-            <a href="" class="project" target="blank">
+            <a href="https://jade-clownfish-498.notion.site/K-Star-Track-76fac18250984c409f2ddbe983339b88" class="project" target="blank">
                 <img src="/image/projects/03_web_design.jpg" alt="국민대학교 K-Star Track 로그인, 메인, 서브 페이지 디자인"
                      class="project__img">
                 <div class="project__description">
