@@ -21,17 +21,17 @@
             <i class="fas fa-cat"></i>
             <a href="#">OHMYO</a>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
+{{--        <ul class="navbar__menu">--}}
+{{--            <li class="navbar__menu__item active">Home</li>--}}
+{{--            <li class="navbar__menu__item">About</li>--}}
+{{--            <li class="navbar__menu__item">Skills</li>--}}
+{{--            <li class="navbar__menu__item">My work</li>--}}
+{{--            <li class="navbar__menu__item">Contact</li>--}}
+{{--        </ul>--}}
         {{--    햄버거 버튼    --}}
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
+{{--        <button class="navbar__toggle-btn">--}}
+{{--            <i class="fas fa-bars"></i>--}}
+{{--        </button>--}}
     </nav>
     <img src="/image/profile.png" alt="ohmyo's profile photo" class="home__avatar"/>
     <h1 class="home__tile">Hello,<br>I'm JungEun Oh</h1>
@@ -180,12 +180,12 @@
 <section id="work" class="section">
     <div class="section__container">
         <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work_categories">
-            <button class="category__btn">All</button>
-            <button class="category__btn">Web Design</button>
-            <button class="category__btn">Mobile Design</button>
-        </div>
+{{--        <h3>Projects</h3>--}}
+{{--        <div class="work_categories">--}}
+{{--            <button class="category__btn">All</button>--}}
+{{--            <button class="category__btn">Web Design</button>--}}
+{{--            <button class="category__btn">Mobile Design</button>--}}
+{{--        </div>--}}
         <div class="work__projects">
             <a href="https://jade-clownfish-498.notion.site/CareeView-39b9b0c3292946d39b55bedefe7e922c" class="project" target="blank">
                 <img src="/image/projects/01_web_design.png" alt="CareerView 메인 페이지, 제안서 디자인" class="project__img">
