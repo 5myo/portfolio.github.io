@@ -14,7 +14,6 @@
     <script src="main.js" defer></script> {{-- html 이 파싱되는 동안 js 파일을 동시에 다운, html 완료 후 js를 불러옴 --}}
 </head>
 <body>
-
 <section id="home">
     {{--  Navbar  --}}
     <nav id="navbar">
@@ -29,6 +28,10 @@
             <li class="navbar__menu__item">My work</li>
             <li class="navbar__menu__item">Contact</li>
         </ul>
+        {{--    햄버거 버튼    --}}
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
     <img src="/image/profile.png" alt="ohmyo's profile photo" class="home__avatar"/>
     <h1 class="home__tile">Hello,<br>I'm JungEun Oh</h1>
@@ -96,82 +99,157 @@
 {{--  Skills  --}}
 <section id="skills" class="section">
     <div class="section__container">
-    <h1>Skills</h1>
-    <h2>Sills & Attributes</h2>
-    <p>
-        전체적인 소프트웨어 라이프 사이클에 대한 경험이 있고 호기심이 많아 깊이 파고드는 것을 잘 합니다.<br>숫기가 없어 달변가라 할 수는 없지만 커뮤니케이션을 중요하게 생각하며 팀 분위기에 잘 녹아드는
-        편입니다.
-    </p>
-    <div class="skill_set">
-        <div class="skill_set__left">
-            <h3 class="skill_set__title">Skills</h3>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>HTML</span>
-                    <span>80%</span>
+        <h1>Skills</h1>
+        <h2>Sills & Attributes</h2>
+        <p>
+            전체적인 소프트웨어 라이프 사이클에 대한 경험이 있고 호기심이 많아 깊이 파고드는 것을 잘 합니다.<br>숫기가 없어 달변가라 할 수는 없지만 커뮤니케이션을 중요하게 생각하며 팀 분위기에 잘
+            녹아드는
+            편입니다.
+        </p>
+        <div class="skill_set">
+            <div class="skill_set__left">
+                <h3 class="skill_set__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 80%;"></div>
+                    </div>
                 </div>
-                <div class="skill__bar">
-                    <div class="skill__value" style="width: 80%;"></div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>PHP</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>MySQL</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 70%;"></div>
+                    </div>
                 </div>
             </div>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>CSS</span>
-                    <span>80%</span>
+            <div class="skill_set__right">
+                <div class="tools">
+                    <h3 class="skill_set__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li><span>IntelliJ</span></li>
+                        <li><span>HeidiSQL</span></li>
+                        <li><span>Workbench MySQL</span></li>
+                    </ul>
                 </div>
-                <div class="skill__bar">
-                    <div class="skill__value" style="width: 80%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>JavaScript</span>
-                    <span>60%</span>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__value" style="width: 60%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>PHP</span>
-                    <span>70%</span>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__value" style="width: 70%;"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>MySQL</span>
-                    <span>70%</span>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__value" style="width: 70%;"></div>
+                <div class="etc">
+                    <h3 class="skill_set__title">Etc</h3>
+                    <ul class="etc__list">
+                        <li><span>Github</span></li>
+                        <li><span>Notion</span></li>
+                        <li><span>Slack</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="skill_set__right">
-            <div class="tools">
-                <h3 class="skill_set__title">Tools</h3>
-                <ul class="tools__list">
-                    <li><span>IntelliJ</span></li>
-                    <li><span>HeidiSQL</span></li>
-                    <li><span>Workbench MySQL</span></li>
-                </ul>
-            </div>
-            <div class="etc">
-                <h3 class="skill_set__title">Etc</h3>
-                <ul class="etc__list">
-                    <li><span>Github</span></li>
-                    <li><span>Notion</span></li>
-                    <li><span>Slack</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
     </div>
 </section>
+{{--  Work  --}}
+<section id="work" class="section">
+    <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work_categories">
+            <button class="category__btn">All</button>
+            <button class="category__btn">Web Design</button>
+            <button class="category__btn">Mobile Design</button>
+        </div>
+        <div class="work__projects">
+            <a href="https://jade-clownfish-498.notion.site/CareeView-39b9b0c3292946d39b55bedefe7e922c" class="project" target="blank">
+                <img src="/image/projects/01_web_design.png" alt="CareerView 메인 페이지, 제안서 디자인" class="project__img">
+                <div class="project__description">
+                    <h3>CareerView</h3>
+                    <span>CareerView 의<br>메인 페이지, 제안서를<br>작업하였습니다.</span>
+                </div>
+            </a>
+            <a href="https://jade-clownfish-498.notion.site/10e8f901603043fbae9661a5fa45d0fd" class="project" target="blank">
+                <img src="/image/projects/02_web_design.png" alt="강릉원주대학교 핵심 역량 진단 시스템 로그인, 메인, 서브 페이지 디자인"
+                     class="project__img">
+                <div class="project__description">
+                    <h3>강릉원주대학교 핵심 역량 진단 시스템</h3>
+                    <span>강릉원주대학교<br>핵심 역량 진단 시스템의<br>로그인, 메인, 서브 페이지를<br>작업하였습니다.</span>
+                </div>
+            </a>
+            <a href="" class="project" target="blank">
+                <img src="/image/projects/03_web_design.jpg" alt="국민대학교 K-Star Track 로그인, 메인, 서브 페이지 디자인"
+                     class="project__img">
+                <div class="project__description">
+                    <h3>국민대학교 K-Star Track</h3>
+                    <span>국민대학교<br>K-Star Track 의<br>로그인, 메인, 서브 페이지를<br>작업하였습니다.</span>
+                </div>
+            </a>
+            <a href="https://jade-clownfish-498.notion.site/04bed3c347d441d8b96d164f7940f30e" class="project" target="blank">
+                <img src="/image/projects/04_web_design.png" alt="군산대학교 통합 관리 서비스 로그인, 메인, 서브 페이지 디자인"
+                     class="project__img">
+                <div class="project__description">
+                    <h3>군산대학교 통합 관리 서비스</h3>
+                    <span>군산대학교<br>통합 관리 서비스의<br>로그인, 메인, 서브 페이지를<br>작업하였습니다.</span>
+                </div>
+            </a>
+            <a href="https://jade-clownfish-498.notion.site/8958d5ff59764d9da744a1752c0411a2" class="project" target="blank">
+                <img src="/image/projects/05_web_design.jpg" alt="삼육대학교 교육혁신단 로그인, 메인, 서브 페이지 디자인" class="project__img">
+                <div class="project__description">
+                    <h3>삼육대학교 교육혁신단</h3>
+                    <span>삼육대학교 교육혁신단의<br>로그인, 메인, 서브 페이지를<br>작업하였습니다.</span>
+                </div>
+            </a>
+            <a href="https://jade-clownfish-498.notion.site/b4e28e326a2344e5b24e94f9b94767ee" class="project" target="blank">
+                <img src="/image/projects/06_web_design.png" alt="다인리더스 서브 페이지 디자인" class="project__img">
+                <div class="project__description">
+                    <h3>다인리더스</h3>
+                    <span>다인리더스의<br>서브 페이지를<br>작업하였습니다.</span>
+                </div>
+            </a>
+            <a href="https://jade-clownfish-498.notion.site/a6f707eae3e749b5bb71fdbfbcc57116" class="project" target="blank">
+                <img src="/image/projects/07_web_design.png" alt="인키움 컨텐츠 디자인" class="project__img">
+                <div class="project__description">
+                    <h3>인키움</h3>
+                    <span>인키움 측에<br>전달할 제안서의<br>컨텐츠를 작업하였습니다.</span>
+                </div>
+            </a>
+            <a href="https://jade-clownfish-498.notion.site/cb6f9d164c5d4023a5cd0ce94b917c82" class="project" target="blank">
+                <img src="/image/projects/01_mobile_design.jpg" alt="원광디지털대학교 로그인, 메인, 서브 페이지 디자인" class="project__img">
+                <div class="project__description">
+                    <h3>원광디지털대학교</h3>
+                    <span>원광디지털대학교의<br>로그인, 메인, 서브 페이지를<br>작업하였습니다.</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+{{--  Contact--}}
 <section id="contact" class="section">
     <h1 class="contact__title">Let's talk</h1>
     <h2 class="contact__email">5rakun@naver.com</h2>

@@ -70,6 +70,17 @@ p{
 .navbar__menu__item:hover {
     background-color: #2e79eb;
 }
+.navbar__toggle-btn {
+    position: absolute;
+    top: 26px;
+    right: 32px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba( 255, 255, 255, 0 );
+    border: none;
+    display: none;
+}
+
 /* Home */
 #home {
     /*height: 450px;*/
@@ -96,11 +107,11 @@ p{
     margin: auto;
     text-align: center;
 }
-
 .section__container {
     max-width: 1200px;
     margin: auto;
 }
+
 
 /* About */
 .about__majors {
@@ -191,4 +202,113 @@ p{
 }
 .tools, .etc {
     padding: 30px;
+}
+/* Work */
+.work_categories {
+    margin: 40px;
+}
+.category__btn {
+    border: 4px solid #f0f0f0;
+    font-size: 14px;
+    padding: 8px 48px;
+    background-color: white;
+}
+.category__btn:active,
+.category__btn:focus,
+.category__btn:hover {
+    border: 4px solid #2371c3;
+    background-color: #2371c3;
+    color: white;
+}
+.work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 280px;
+    height: 250px;
+    position: relative;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.project__img {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+}
+.project__description {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 300ms ease;
+}
+.project:hover .project__description {
+    opacity: 0.8;
+    transform: translateY(0px);
+}
+.project__description h3 {
+    color: white;
+}
+
+/* Contact */
+#contact {
+    background-color: #364B6B;
+}
+.contact__title,
+.contact__email,
+.contact__links,
+.contact__rights {
+    color: white;
+}
+.contact__title {
+    margin: 32px 0;
+}
+.contact__links {
+    font-size: xx-large;
+    margin: 24px 0;
+    transition: all 300ms ease;
+}
+.contact__links i:hover {
+    transform: scale(1.1);
+    color: #14A65A;
+}
+@media  screen and (max-width: 768px){
+    .navbar__toggle-btn {
+        display: block;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__menu {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    .about__majors {
+        flex-direction: column;
+    }
+    .major {
+        margin-bottom: 38px;
+    }
+    .skill_set {
+        flex-direction: column;
+    }
+    .project {
+        flex-grow: 1;
+    }
 }
