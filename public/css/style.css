@@ -1,0 +1,146 @@
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+* {
+    box-sizing: border-box;
+}
+h1, h3, p, body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    margin: 0;
+    cursor: default;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111b35;
+}
+h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111b35;
+    margin: 8px 0;
+}
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #35446a;
+    margin: 8px 0;
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #202d2d;
+    margin: 4px 0;
+}
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    /*background-color: #181818;*/
+    align-items: center;
+    color: white;
+    padding: 16px;
+}
+.navbar__menu {
+    display: flex;
+}
+.navbar__logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+.navbar__menu__item {
+    padding: 8px 12px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.navbar__menu__item.active {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.navbar__menu__item:hover {
+    background-color: #2e79eb;
+}
+/* Home */
+#home {
+    /*height: 450px;*/
+    background: url("/image/home-background.png") center/cover no-repeat;
+    /*background-color: #181818;*/
+    /*background: linear-gradient(to bottom, #181818, #231910);*/
+    padding: 10px 40px 40px 40px;
+    text-align: center;
+}
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    /*border: 1px solid #634f45;*/
+    border-radius: 50%;
+}
+.home__tile,
+.home__description {
+    color: white;
+}
+
+/* Section common */
+.section {
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    max-width: 1200px;
+}
+
+/* About */
+.about__majors {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+.major__icon {
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    color: #2e79eb;
+    font-size: 70px;
+    padding-bottom: 16px;
+    margin: auto;
+    border: 4px solid #f0f0f0;
+    border-radius: 50%;
+}
+.major__icon i {
+    transition: all 300ms ease;
+}
+.major__icon i:hover {
+    color: #7E9E18;
+    transform: rotate(-30deg) scale(1.0);
+}
+.major__description {
+    color: #7f8eb5;
+    font-size: 14px;
+}
+.job {
+    display: flex;
+    align-items: center;
+}
+.job img {
+    width: 13%;
+}
+.jop__description {
+    margin: 0 25px;
+    text-align: left;
+}
+.job__name, .job__period {
+    color: #9d9d9d;
+}
+.job__name {
+    font-size: 15px;
+    font-weight: 400;
+}
